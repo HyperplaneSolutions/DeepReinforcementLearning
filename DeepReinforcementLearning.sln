@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DeepReinforcementLearning", "DeepReinforcementLearning.pyproj", "{BBB31AC6-7A93-442F-A7A2-01D272F86A61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBB31AC6-7A93-442F-A7A2-01D272F86A61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB31AC6-7A93-442F-A7A2-01D272F86A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCD555EF-D11E-4192-AF91-1D52194E944E}
+	EndGlobalSection
+EndGlobal
