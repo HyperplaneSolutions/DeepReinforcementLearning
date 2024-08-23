@@ -17,8 +17,9 @@ ALPHA = 1e-3              # learning rate
 NUM_STEPS_FOR_UPDATE = 4  # perform a learning update every C time steps
 
 env = gym.make("BipedalWalker-v3", hardcore=True, render_mode="human")
-state_size = env.observation_space.shape
-num_actions = env.action_space.shape
+wrapped_env = FlattenObservation(env)
+state_size =wrapped_env.observation_space.shape
+num_actions = wrapped_env.action_space.shape
 print('State Shape:', state_size)
 print('Number of actions:', num_actions)
 
@@ -26,14 +27,14 @@ print('Number of actions:', num_actions)
 q_network = Sequential([
     Input(state_size),
     Dense(64, activation = 'relu'),
-    Dense(64, activation = 'relu'),
+    Dense(128, activation = 'relu'),
     Dense(num_actions, activation = 'linear')
     ])
 
 target_q_network = Sequential([
     Input(state_size),
     Dense(64, activation = 'relu'),
-    Dense(64, activation = 'relu'),
+    Dense(128, activation = 'relu'),
     Dense(num_actions, activation = 'linear')
     ])
 
